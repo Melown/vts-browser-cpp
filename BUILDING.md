@@ -41,7 +41,7 @@ cd vts-browser-cpp/browser
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=RELEASE ..
-cmake --build . -- -j5 # use 5 processes
+cmake --build . -- -j`nproc`
 ```
 
 And run the example application.
